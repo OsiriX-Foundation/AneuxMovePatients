@@ -11,7 +11,7 @@
     Please generate an user token on <a href="https://aneux.kheops.online/user?view=token">https://aneux.kheops.online</a>.
   </p>
   <p>
-    <b>Token value: </b>
+    <b>Token Value: </b>
     <input type="text" name="token" value="" id="token" onkeyup="initToken(this.value)">
     <input type="button" text="send" onclick="initToken('')" value="Load">
   </p>
@@ -19,12 +19,12 @@
     <b>Token Status: </b><span id="tokenValue"></span>
   </p>
   <p>
-    <b>Album source : </b>
+    <b>Source Album : </b>
     <select id="albumSource" onchange="setPatientID()">
     </select>
   </p>
   <p>
-    <b>Album target : </b>
+    <b>Target Album : </b>
     <select id="albumTarget" onchange="setPatientID()">
     </select>
   </p>
@@ -32,17 +32,17 @@
     <b>CSV file: </b><input type="file" id="csvFile" name="csvFile" onchange="readCSV()">
   </p>
   <p>
-    <b>Informations file: </b><span id="infoFile"></span>
+    <b>File Information: </b><span id="infoFile"></span>
   </p>
   <p>
-    <b>Informations studies: </b><span id="infoStudies"></span>
+    <b>Source Information: </b><span id="infoStudies"></span>
   </p>
   <p>
-    <b>Patient id not found: </b>
+    <b>Patient ID Not Found: </b>
     <ul id="infoPatientID"></ul>
   </p>
   <p>
-    <b>Informations send: </b><span id="sendInfo"></span>
+    <b>Sent: </b><span id="sendInfo"></span>
   </p>
   <p>
     <input type="submit" text="Send" id="sendData" onclick="sendAll()" disabled>
